@@ -1,5 +1,13 @@
 <h1>MONGODB - EXERCISE</h1>
 
+<div id="error-container">
+  {{# if error_message }}
+    <p style="background-color: orange;"">
+      {{ error_message }}
+    </p>
+  {{/if}}
+</div>
+
 <section class="insert">
     <h3>Insert Data</h3>
     <form action="/insert" method="post">
